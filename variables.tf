@@ -8,6 +8,11 @@ variable "organization" {
   default = ""
 }
 
+variable "description" {
+  type    = string
+  default = ""
+}
+
 variable "tag_names" {
   type    = list(any)
   default = []
