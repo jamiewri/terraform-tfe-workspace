@@ -43,5 +43,5 @@ variable "teams_access" {
     name = string
     access = string
   }))
-  default []
+  default = []
 }
