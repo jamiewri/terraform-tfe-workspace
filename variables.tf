@@ -39,9 +39,9 @@ variable "vcs_repo_oauth_token_id" {
 }
 
 variable "teams_access" {
-  type = list(object{
+  type = list(object({
     name = string
     access = string
-  })
+  }))
   default []
 }
