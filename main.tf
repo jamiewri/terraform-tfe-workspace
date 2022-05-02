@@ -28,6 +28,6 @@ resource "tfe_team_access" "team_access" {
   }
 
   access = each.value.access
-  team_id = data.tfe_team.team_access[each.value.name].id
+  team_id = data.tfe_team.team[each.value.name].id
   workspace_id = tfe_workspace.workspace.id
 }
