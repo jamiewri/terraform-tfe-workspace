@@ -38,3 +38,10 @@ variable "vcs_repo_oauth_token_id" {
   default = ""
 }
 
+variable "teams_access" {
+  type = list(object{
+    name = string
+    access = string
+  })
+  default []
+}
